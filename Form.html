@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Action: giá trị là 1 đường dẫn
+    Xác định nơi nhận giá trị khi gửi -->
+
+    <form 
+        action="https://www.w3schools.com/action_page.php"
+        target="_blank"
+
+        method="post"
+        autocomplete="off"
+        >
+
+        <!-- Thuộc tính for trong label nó sẽ
+        focus vào cái ô chứ id ở input
+        value of for = value of id -->
+        <label for="fullName">Họ tên:</label>
+        <br> <!--Xuong dong-->
+
+        <input type="text" id="fullName"
+        name = "full_name">
+        <br> 
+
+        <!--Backend chỉ quan tâm đến action, method, name-->
+        <label for="email">Email:</label>
+        <br>
+
+        <input type="text" id="Email"
+        name = "email">
+        <br>
+
+        <label for="password">PassWord:</label>
+        <br>
+
+        <input type="password" id="password"
+        name = "MatKhau">
+        <br>
+
+        <br>
+        <!-- <input type="text" value="Gửi"> -->
+        <input type="submit" value="Gửi">
+
+    </form>
+</body>
+</html>
